@@ -1,0 +1,13 @@
+node_modules/
+credo-frontend/node_modules/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+dist/
+build/
+.next/
+coverage/
+*.log

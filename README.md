@@ -13,7 +13,7 @@
 
 *Revolutionary on-chain credit scoring that unlocks under-collateralized lending with enterprise-grade security and Apple-inspired design*
 
-[🌐 Live Demo](http://localhost:3000) • [📚 API Docs](http://localhost:8000/docs) • [🎥 Video Demo](#) • [📖 Whitepaper](#)
+[🌐 Live Demo](http://localhost:3000) • [📚 API Docs](http://localhost:8000/docs) • [🎥 Video Demo](#) • [📖 Whitepaper](/WHITEPAPER.md)
 
 
 

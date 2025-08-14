@@ -15,7 +15,7 @@
 
 [🌐 Live Demo](http://localhost:3000) • [📚 API Docs](http://localhost:8000/docs) • [🎥 Video Demo](#) • [📖 Whitepaper](#)
 
-![Credo Dashboard Preview](https://via.placeholder.com/800x400/3B82F6/ffffff?text=Credo+Dashboard+Preview)
+
 
 </div>
 

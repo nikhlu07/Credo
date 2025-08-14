@@ -55,7 +55,10 @@ async def contract_status():
         "registry_address": registry_address if registry_address else None,
         "oracle_deployed": bool(oracle_address),
         "registry_deployed": bool(registry_address),
-        "network": "Morph Holesky",
+        "analysis_network": "Ethereum Mainnet",  # Rich DeFi history
+        "contract_network": "Morph Holesky",     # Fast, cheap L2
+        "value_proposition": "Cross-chain credit scoring for Morph DeFi",
+        "morph_benefits": ["Low gas fees", "Fast transactions", "Ethereum security"],
         "chain_id": 2810
     }
 
@@ -115,16 +118,16 @@ class BatchScoreRequest(BaseModel):
     addresses: List[str]
     submit_to_oracle: bool = False
 
-@app.post("/score/update")
-async def update_score_with_oracle(request: ScoreUpdateRequest):
+@app.post("/submit-to-morph")
+async def submit_score_to_morph(request: ScoreUpdateRequest):
     """
-    Calculate score and optionally submit to oracle
+    Submit calculated credit score to Morph network for on-chain storage
     
     Args:
-        request: Contains address and oracle submission flag
+        request: Contains address and submission flag
         
     Returns:
-        Score calculation result and oracle submission status
+        Morph submission result with transaction details
     """
     try:
         # Validate address format

@@ -1,5 +1,6 @@
 // Quick deployment status checker - run with: node check-deployment.js
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
 async function checkDeployment() {
   console.log("🔍 Checking Deployment Status...\n");

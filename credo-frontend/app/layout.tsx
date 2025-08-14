@@ -5,7 +5,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata = {
   title: "Credo - DeFi Credit Score Platform",
   description: "Unlock your DeFi credit potential with comprehensive on-chain reputation scoring",
-    generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/credo_logo.svg',
+    shortcut: '/credo_logo.svg',
+    apple: '/credo_logo.svg',
+  },
 }
 
 export default function RootLayout({

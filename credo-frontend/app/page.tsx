@@ -441,7 +441,7 @@ function Dashboard({ address }: { address: string }) {
   const getScore = async (walletAddress: string) => {
     setLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/score/${walletAddress}`)
+      const response = await fetch(`https://morph-97xsdaitc-nikhlu07s-projects.vercel.app/score/${walletAddress}`)
       
       if (!response.ok) {
         throw new Error('Failed to fetch score')
@@ -724,7 +724,7 @@ function Dashboard({ address }: { address: string }) {
                       className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-2xl font-bold shadow-lg hover:shadow-xl transition-all"
                       onClick={async () => {
                         try {
-                          const response = await fetch('http://localhost:8000/submit-to-morph', {
+                          const response = await fetch('https://morph-97xsdaitc-nikhlu07s-projects.vercel.app/submit-to-morph', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ 

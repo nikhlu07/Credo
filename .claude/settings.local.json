@@ -1,9 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(node:*)",
+      "WebFetch(domain:explorer-holesky.morphl2.io)",
+      "WebFetch(domain:explorer-holesky.morphl2.io)",
+      "Bash(npx vercel:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "acceptEdits"
   }
 }

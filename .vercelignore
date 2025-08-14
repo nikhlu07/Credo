@@ -1,0 +1,16 @@
+requirements.txt
+node_modules/
+credo-frontend/
+contracts/
+test/
+scripts/
+*.md
+.git/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/

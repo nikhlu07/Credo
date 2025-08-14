@@ -4,6 +4,7 @@ from fastapi.responses import JSONResponse
 from services.morph_service import calculate_score
 from services.oracle_service import submit_score_to_oracle, batch_submit_scores_to_oracle
 import logging
+import os
 from typing import List
 from pydantic import BaseModel
 
@@ -36,6 +37,26 @@ async def root():
         "endpoints": {
             "score": "/score/{address} - Get reputation score for a wallet address"
         }
+    }
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {"status": "healthy", "message": "Backend API is running"}
+
+@app.get("/contract-status")
+async def contract_status():
+    """Get smart contract deployment status"""
+    oracle_address = os.getenv("SCORE_ORACLE_ADDRESS")
+    registry_address = os.getenv("SCORE_REGISTRY_ADDRESS")
+    
+    return {
+        "oracle_address": oracle_address if oracle_address else None,
+        "registry_address": registry_address if registry_address else None,
+        "oracle_deployed": bool(oracle_address),
+        "registry_deployed": bool(registry_address),
+        "network": "Morph Holesky",
+        "chain_id": 2810
     }
 
 @app.get("/score/{address}")

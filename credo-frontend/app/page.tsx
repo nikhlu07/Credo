@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Search, Wallet, BarChart3, TrendingUp, Shield, Zap, ArrowRight, Play, CheckCircle, Clock, DollarSign } from "lucide-react"
+import { ContractStatus } from "@/components/ContractStatus"
 
 // Mock wallet connection hook
 const useAccount = () => {
@@ -760,6 +761,9 @@ function Dashboard({ address }: { address: string }) {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Contract Status */}
+            <ContractStatus />
 
             {/* Recent Activity */}
             <Card className="p-8 bg-white/70 backdrop-blur-xl border-0 shadow-xl rounded-3xl">

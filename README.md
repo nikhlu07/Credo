@@ -13,7 +13,7 @@
 
 *Revolutionary on-chain credit scoring that unlocks under-collateralized lending with enterprise-grade security and Apple-inspired design*
 
-[🌐 Live Demo](credo-frontend.vercel.app) • [📚 API Docs](/API_DOCS.md) • [🎥 Video Demo](credo-frontend.vercel.app) • [📖 Whitepaper](/WHITEPAPER.md)
+[🌐 Live Demo](credo-frontend.vercel.app) • [📚 API Docs](/API_DOCS.md) • [🎥 Video Demo](https://youtu.be/UuRKI2r-itc) • [📖 Whitepaper](/WHITEPAPER.md)
 
 
 

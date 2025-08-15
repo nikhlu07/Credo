@@ -574,6 +574,6 @@ We analyze only publicly available blockchain data. No personal information is c
 
 ---
 
-*© 2024 Credo Finance. All rights reserved. | Built for [Morph L2](https://morphl2.io) Hackathon*
+*© 2025 Credo Finance. All rights reserved. | Built for [Morph L2](https://morphl2.io) Hackathon*
 
 </div>
